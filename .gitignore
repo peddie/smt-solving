@@ -8,8 +8,3 @@ cabal.sandbox.config
 *.log
 *.pdf
 *.pdf
-*.svg
-Stabilized_omega.png
-Stabilized_theta.png
-Unstabilized_omega.png
-Unstabilized_theta.png
