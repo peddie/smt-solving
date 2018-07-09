@@ -1,0 +1,29 @@
+name:                pendulum
+version:             0.1.0.0
+synopsis:            Backing code for BFPG talk on SMT solving
+-- description:
+homepage:            https://github.com/peddie/smt-solving
+license:             BSD3
+license-file:        LICENSE
+author:              Matthew Peddie
+maintainer:          mpeddie@gmail.com
+copyright:           Matthew Peddie <mpeddie@gmail.com>
+category:            Math
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable pendulum
+  main-is:             Pendulum.hs
+  other-extensions:    UnicodeSyntax
+                     , DeriveFunctor
+                     , DeriveFoldable
+                     , DeriveTraversable
+                     , NoMonomorphismRestriction
+  build-depends:       base >=4.8 && <4.11
+                     , sbv == 7.9
+                     , hmatrix == 0.18.2.0
+                     , hmatrix-gsl == 0.18.2.0
+                     , Chart == 1.8.3
+                     , Chart-cairo == 1.8.3
+  default-language:    Haskell2010
